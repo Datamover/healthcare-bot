@@ -1,29 +1,25 @@
+# 🧠 AI Healthcare Assistant Bot
 
-# AI Healthcare Bot
+This is an intelligent web-based healthcare assistant built with **FastAPI** and **React**, designed to help patients and healthcare providers find relevant **drug recommendations** and **clinical trial opportunities** based on condition and location.
 
-## 🌐 Project Structure
-- FastAPI backend (drug + trial recommendation)
-- React frontend (configured for GitHub Pages)
-- Streamlit chatbot version (optional)
-- SQL schema + docker-compose
+## 🩺 Features
 
-## 🚀 Deployment Steps
+- ✅ Recommends drugs based on patient condition
+- ✅ Matches patients to active clinical trials using fuzzy matching on diagnoses
+- ✅ Accepts condition + location input via a user-friendly React frontend
+- ✅ Sends API requests to a FastAPI backend
+- ✅ (Optional) Captures lead information: name, email, phone
+- ✅ Deployable frontend via GitHub Pages
+- ✅ Backend ready for cloud deployment (e.g., Render.com)
 
-### Backend (Render)
-1. Push to GitHub
-2. Create a new Render Web Service
-3. Build Command: `pip install -r requirements.txt`
-4. Start Command: `uvicorn main:app --host 0.0.0.0 --port 8000`
+## 🛠 Tech Stack
 
-### Frontend (GitHub Pages)
-```bash
-cd frontend
-npm install
-npm run build
-npm run deploy
-```
+| Layer         | Tools Used                         |
+|---------------|------------------------------------|
+| Frontend      | React + TypeScript + GitHub Pages  |
+| Backend       | FastAPI + Uvicorn                  |
+| Data Matching | Python, mock data (can use SQL)    |
+| Hosting       | GitHub Pages (frontend), Render (backend) |
 
-### Streamlit Chatbot
-```bash
-streamlit run streamlit_app/streamlit_app.py
-```
+## 📦 Project Structure
+
